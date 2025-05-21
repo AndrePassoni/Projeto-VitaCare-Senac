@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.header {
+  background-color: #B2D8B2;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 20px;
+}
+
+.nav-button {
+  background-color: white;
+  color: #4a4a4a;
+  border: 1px solid #B2D8B2;
+  border-radius: 6px;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  background-color: #A0CFA0;
+  color: white;
+}
+
+.nav-button:active {
+  transform: scale(1.25);
+}
+
+.home_intro {
+  padding: 40px 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.img_home {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img_home:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.home_text {
+  padding: 0 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: justify;
+}
+
+.home_text_titulo h2 {
+  color: #B2D8B2;
+  margin-bottom: 10px;
+}
+
+.home_text_titulo{
+  padding: 0 70px;
+  max-width: 1000px;
+  margin: -20px auto;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  img {
+    width: 120px;
+    height: auto;
+  }
+
+  .navbar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .nav-button {
+    flex-shrink: 0;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .home_text {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home_intro h1 {
+    font-size: 24px;
+  }
+
+  .home_intro h2 {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .nav-button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
